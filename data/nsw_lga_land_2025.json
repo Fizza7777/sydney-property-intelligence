@@ -1,0 +1,232 @@
+{
+  "source": "NSW Valuer General, Overview of NSW land values at 1 July 2025",
+  "url": "https://www.nsw.gov.au/housing-and-construction/land-values-nsw/resource-library/overview-of-nsw-land-values-at-1-july-2025",
+  "basis": "All categories: residential, commercial, industrial, rural and other. Mean is total statutory land value divided by number of valued properties, NOT median land value or land-sale price.",
+  "year": 2025,
+  "lgas": [
+    {
+      "lga": "CITY OF SYDNEY",
+      "count": 28122,
+      "total": 143597109150,
+      "change": 3.5,
+      "year": 2025
+    },
+    {
+      "lga": "BAYSIDE",
+      "count": 33020,
+      "total": 62509521530,
+      "change": 1.5,
+      "year": 2025
+    },
+    {
+      "lga": "BLACKTOWN",
+      "count": 126322,
+      "total": 126747380851,
+      "change": 4.4,
+      "year": 2025
+    },
+    {
+      "lga": "BLUE MOUNTAINS",
+      "count": 37306,
+      "total": 20299663127,
+      "change": 0,
+      "year": 2025
+    },
+    {
+      "lga": "BURWOOD",
+      "count": 7728,
+      "total": 19713242504,
+      "change": 5.1,
+      "year": 2025
+    },
+    {
+      "lga": "CAMDEN",
+      "count": 47519,
+      "total": 47647474335,
+      "change": 7.2,
+      "year": 2025
+    },
+    {
+      "lga": "CAMPBELLTOWN",
+      "count": 58681,
+      "total": 51135211618,
+      "change": 6.2,
+      "year": 2025
+    },
+    {
+      "lga": "CANADA BAY",
+      "count": 18248,
+      "total": 51230028168,
+      "change": 4.9,
+      "year": 2025
+    },
+    {
+      "lga": "CANTERBURY-BANKSTOWN",
+      "count": 89993,
+      "total": 122626409429,
+      "change": 6.7,
+      "year": 2025
+    },
+    {
+      "lga": "CITY OF PARRAMATTA",
+      "count": 49057,
+      "total": 92397824711,
+      "change": 4.2,
+      "year": 2025
+    },
+    {
+      "lga": "CUMBERLAND",
+      "count": 51502,
+      "total": 66997843873,
+      "change": 5.8,
+      "year": 2025
+    },
+    {
+      "lga": "FAIRFIELD",
+      "count": 54186,
+      "total": 63152923078,
+      "change": 10.1,
+      "year": 2025
+    },
+    {
+      "lga": "GEORGES RIVER",
+      "count": 35991,
+      "total": 51585540041,
+      "change": 4.7,
+      "year": 2025
+    },
+    {
+      "lga": "HAWKESBURY",
+      "count": 26632,
+      "total": 23884230240,
+      "change": 1.8,
+      "year": 2025
+    },
+    {
+      "lga": "HORNSBY",
+      "count": 41527,
+      "total": 63177061016,
+      "change": 2.1,
+      "year": 2025
+    },
+    {
+      "lga": "HUNTERS HILL",
+      "count": 3727,
+      "total": 13360190298,
+      "change": 6.1,
+      "year": 2025
+    },
+    {
+      "lga": "INNER WEST",
+      "count": 51542,
+      "total": 96561230492,
+      "change": 2,
+      "year": 2025
+    },
+    {
+      "lga": "KU-RING-GAI",
+      "count": 33612,
+      "total": 84244003286,
+      "change": 2.1,
+      "year": 2025
+    },
+    {
+      "lga": "LANE COVE",
+      "count": 7782,
+      "total": 23974576385,
+      "change": 10.2,
+      "year": 2025
+    },
+    {
+      "lga": "LIVERPOOL",
+      "count": 68377,
+      "total": 79976951015,
+      "change": 7.5,
+      "year": 2025
+    },
+    {
+      "lga": "MOSMAN",
+      "count": 6905,
+      "total": 33388608089,
+      "change": 7.4,
+      "year": 2025
+    },
+    {
+      "lga": "NORTH SYDNEY",
+      "count": 10294,
+      "total": 47334957611,
+      "change": 5.2,
+      "year": 2025
+    },
+    {
+      "lga": "NORTHERN BEACHES",
+      "count": 68717,
+      "total": 162751315336,
+      "change": 3.4,
+      "year": 2025
+    },
+    {
+      "lga": "PENRITH",
+      "count": 67605,
+      "total": 78232614572,
+      "change": 6.5,
+      "year": 2025
+    },
+    {
+      "lga": "RANDWICK",
+      "count": 26649,
+      "total": 74382224085,
+      "change": 2.9,
+      "year": 2025
+    },
+    {
+      "lga": "RYDE",
+      "count": 26722,
+      "total": 64862465419,
+      "change": 4.7,
+      "year": 2025
+    },
+    {
+      "lga": "STRATHFIELD",
+      "count": 7391,
+      "total": 24951312970,
+      "change": 5,
+      "year": 2025
+    },
+    {
+      "lga": "SUTHERLAND",
+      "count": 62441,
+      "total": 92578891062,
+      "change": 0.4,
+      "year": 2025
+    },
+    {
+      "lga": "THE HILLS SHIRE",
+      "count": 63815,
+      "total": 91707134853,
+      "change": 3.1,
+      "year": 2025
+    },
+    {
+      "lga": "WAVERLEY",
+      "count": 13158,
+      "total": 56242840572,
+      "change": 5.1,
+      "year": 2025
+    },
+    {
+      "lga": "WILLOUGHBY",
+      "count": 17366,
+      "total": 50782143459,
+      "change": 3.3,
+      "year": 2025
+    },
+    {
+      "lga": "WOOLLAHRA",
+      "count": 13336,
+      "total": 87728124017,
+      "change": 8,
+      "year": 2025
+    }
+  ]
+}
