@@ -65,6 +65,9 @@ def main():
         except:pass
     results=previous.copy()
     limit=int(os.getenv('SUBURB_LIMIT','835'))
+    target=os.getenv('TARGET_SUBURB','KINCUMBER').upper()
+    features=[f for f in features if f['properties']['suburbname'].strip().upper()==target]
+    if not features: raise RuntimeError(f'Test suburb {target} not found')
     for idx,f in enumerate(features[:limit],1):
         name=f['properties']['suburbname'].strip()
         if name in results and results[name].get('sample_size',0)>=10:continue
@@ -78,7 +81,7 @@ def main():
             observations={}
             offset=0
             while offset<total:
-                payload=get(BASE,{**base,'resultOffset':offset,'resultRecordCount':750})
+                payload=get(BASE,{**base,'resultRecordCount':100})
                 feats=payload.get('features',[])
                 if not feats:break
                 for item in feats:
@@ -91,7 +94,7 @@ def main():
                         if v>0 and yr and 2018<=yr<=2026:
                             observations.setdefault(yr,[]).append(v/a)
                 offset+=len(feats)
-                if len(feats)<750:break
+                break  # Initial one-suburb API compatibility test; not full coverage
             viable=[(yr,vals) for yr,vals in observations.items() if len(vals)>=10]
             if not viable:continue
             yr,vals=max(viable,key=lambda pair:pair[0])
