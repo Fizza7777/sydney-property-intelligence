@@ -12,10 +12,10 @@ def get(url,params,retries=4):
         try:
             req=urllib.request.Request(u,headers={'User-Agent':'SydneyPropertyIntelligence/1.0 (public NSW valuation research)','Accept':'application/json'})
             with urllib.request.urlopen(req,timeout=65) as r: obj=json.load(r)
-            if 'error' in obj: raise RuntimeError(str(obj['error']))
+            if 'error' in obj: raise ValueError(f"NSW API rejected query at {url}: {obj['error']}; parameters: {params}")
             return obj
         except Exception as exc:
-            if attempt==retries-1: raise
+            if isinstance(exc, ValueError) or attempt==retries-1: raise
             print('Retry',attempt+1,str(exc)[:130],flush=True);time.sleep(2**attempt)
 def area(x):
     import re
@@ -99,6 +99,8 @@ def main():
             if idx%10==0:
                 OUT.write_text(json.dumps(sorted(results.values(),key=lambda x:x['suburb']),indent=2))
             print(idx,name,yr,len(vals),'$',results[name]['per_sqm'],'/m²',flush=True)
+        except ValueError as exc:
+            raise RuntimeError(f'Invalid NSW API query for {name}: {exc}') from exc
         except Exception as exc:
             print(idx,name,'ERROR',str(exc)[:220],flush=True)
     OUT.write_text(json.dumps(sorted(results.values(),key=lambda x:x['suburb']),indent=2))
