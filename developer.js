@@ -14,7 +14,7 @@ box.innerHTML=`<div class="lab-title"><div><span class="eyebrow">REAL NSW GOVERN
 document.querySelector('.bottom-grid').before(box);
 // Show the verified city-wide market benchmarks above the empty suburb-coverage indicators.
 const headlineBenchmarks=box.querySelector('.lab-stats');const benchmarkFoot=headlineBenchmarks.nextElementSibling;document.querySelector('.kpis').before(headlineBenchmarks,benchmarkFoot);
-const labStyle=document.createElement('link');labStyle.rel='stylesheet';labStyle.href='./developer.css?v=1';document.head.append(labStyle);
+const labStyle=document.createElement('link');labStyle.rel='stylesheet';labStyle.href='./developer.css?v=3';document.head.append(labStyle);
 const raw=n=>Math.max(0,Number(document.getElementById(n).value)||0);
 function calculate(){const land=raw('calcLand'),build=raw('calcBuild'),costs=raw('calcCosts'),sale=raw('calcExit'),rent=raw('calcRent'),exp=raw('calcExpenses'),total=land+build+costs,profit=sale-total;document.getElementById('devCost').textContent=fmt(total);document.getElementById('devProfit').textContent=fmt(profit);document.getElementById('devProfit').style.color=profit>=0?'#83e6ce':'#ff918a';document.getElementById('devMargin').textContent=total?((profit/total)*100).toFixed(1)+'%':'—';document.getElementById('devYield').textContent=total?(((rent*52-exp)/total)*100).toFixed(2)+'%':'—'}
 for(const id of ['calcLand','calcBuild','calcCosts','calcExit','calcRent','calcExpenses'])document.getElementById(id).addEventListener('input',calculate);calculate();
