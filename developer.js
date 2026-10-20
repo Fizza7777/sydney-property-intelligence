@@ -40,5 +40,40 @@ cache.set(name,observations);applyLand(name,observations);
 }catch(e){if(active!==call)return;status.textContent='Live valuation unavailable: '+e.message;console.warn('NSW live land query',e)}
 }
 function applyLand(name,observations){st.metrics=st.metrics.filter(x=>!(x.metric==='land'&&x.suburb===name)).concat(observations);if(st.selected===name){selectSuburb(name,false);const detail=document.getElementById('landPeriod');const x=observations[0];if(st.year==='latest'||st.year===String(x.year))detail.textContent=x.year+' · '+number(x.sample_size)+' official urban parcel values · all zoning';document.getElementById('trendEmptyDesc').textContent=observations.length>1?'Verified urban parcel medians by year: '+observations.map(x=>x.year+' '+fmt(x.median)).join(' · '):'Verified urban parcel observations · '+x.year+' · n='+number(x.sample_size)} }
-const original=selectSuburb;selectSuburb=function(name,zoom){original(name,zoom);if(cache.has(name))return;querySuburb(name)};
+// Source data is obtained directly from the official NSW map service in the browser.
+// Sale type is not explicitly classified as house: non-strata sales are a proxy, NOT a verified house-only median.
+const SALE='https://maps.six.nsw.gov.au/arcgis/rest/services/public/Valuation/MapServer/1/query';
+const salesCache=new Map();let saleCall=0;
+const panel=document.querySelector('.detail-card');
+const salesBox=document.createElement('div');salesBox.className='sale-evidence';salesBox.innerHTML='<div class="sale-evidence-head"><strong>Median recorded non-strata sale <span class="lab-badge">HOUSE PROXY · NOT HOUSE-ONLY</span></strong><span id="salesEvidenceStatus">Select a suburb to load NSW sales</span></div><div class="sale-evidence-number" id="salesEvidenceValue">—</div><p id="salesEvidenceDetails">Source: NSW Spatial Services urban property sales. Non-strata sales may include vacant land and other transactions. Not a verified house-only median.</p><a href="https://www.nsw.gov.au/housing-and-construction/land-values-nsw/how-to-find-property-sales-information" target="_blank" rel="noopener">Official NSW sale data ↗</a>';panel.append(salesBox);
+const mapControls=document.createElement('div');mapControls.className='map-easy-controls';mapControls.innerHTML='<button id="mapHome" type="button" title="Reset Sydney map">⌂ Sydney</button><button id="mapZoomIn" type="button" title="Zoom in">+</button><button id="mapZoomOut" type="button" title="Zoom out">−</button>';
+document.getElementById('map').append(mapControls);
+document.getElementById('mapHome').addEventListener('click',()=>map.flyTo([-33.87,150.98],10,{duration:.55}));
+document.getElementById('mapZoomIn').addEventListener('click',()=>map.zoomIn());
+document.getElementById('mapZoomOut').addEventListener('click',()=>map.zoomOut());
+map.scrollWheelZoom.disable();map.doubleClickZoom.enable();map.touchZoom.enable();map.dragging.enable();
+const original=selectSuburb;
+selectSuburb=function(name,zoom){original(name,false);if(zoom){const f=st.features.find(x=>displayName(x)===name);if(f){const c=L.geoJSON(f).getBounds().getCenter();map.flyTo(c,Math.min(12,Math.max(map.getZoom(),10)),{duration:.4})}}
+if(!cache.has(name))querySuburb(name);loadSales(name)};
+async function loadSales(name){const token=++saleCall;if(salesCache.has(name)){showSales(name,salesCache.get(name));return}
+const valueEl=document.getElementById('salesEvidenceValue'),statusEl=document.getElementById('salesEvidenceStatus');
+valueEl.textContent='…';statusEl.textContent='Querying verified NSW sales';
+try{
+const where="suburb = '"+name.toUpperCase().replace(/'/g,"''")+"'";
+const fields='price,sale_date,strata,deal_props,suburb,area';
+const params={where,outFields:fields,returnGeometry:'false',f:'json',orderByFields:'OBJECTID ASC'};
+const countRes=await fetch(SALE+'?'+new URLSearchParams({...params,returnCountOnly:'true'}));if(!countRes.ok)throw Error('NSW server '+countRes.status);const countData=await countRes.json();if(countData.error)throw Error(countData.error.message||'NSW sales query failed');
+const total=Number(countData.count);if(!Number.isFinite(total)||total===0)throw Error('No mapped transactions returned');
+if(total>12000)throw Error('Large result set: use official sales search for full suburb');
+const rows=[];for(let offset=0;offset<total;offset+=800){if(token!==saleCall)return;const response=await fetch(SALE+'?'+new URLSearchParams({...params,resultOffset:String(offset),resultRecordCount:'800'}));if(!response.ok)throw Error('NSW server '+response.status);const data=await response.json();if(data.error)throw Error(data.error.message||'NSW query error');if(!data.features?.length)break;rows.push(...data.features.map(x=>x.attributes))}
+if(token!==saleCall)return;
+const cutoff=new Date();cutoff.setFullYear(cutoff.getFullYear()-2);
+const eligible=rows.filter(r=>Number(r.price)>=50000&&Number(r.strata)===0&&(r.deal_props==null||Number(r.deal_props)===1)&&r.sale_date&&new Date(r.sale_date).getTime()>=cutoff.getTime()&&new Date(r.sale_date).getTime()<=Date.now());
+const prices=eligible.map(x=>Number(x.price));if(prices.length<5)throw Error('Fewer than five eligible recent non-strata sales');
+const result={median:Math.round(med(prices)),count:prices.length,total:rows.length,period:'Last 24 months',latest:eligible.map(x=>new Date(x.sale_date).getTime()).reduce((a,b)=>Math.max(a,b),0)};
+salesCache.set(name,result);showSales(name,result)
+}catch(err){if(token!==saleCall)return;valueEl.textContent='Unavailable';statusEl.textContent='No verified median';document.getElementById('salesEvidenceDetails').textContent=err.message+'. Use the official NSW sales lookup. No estimated price has been substituted.'}
+}
+function showSales(name,r){if(st.selected!==name)return;document.getElementById('salesEvidenceValue').textContent=fmt(r.median);document.getElementById('salesEvidenceStatus').textContent=r.period+' · n='+number(r.count);document.getElementById('salesEvidenceDetails').textContent='Median of '+number(r.count)+' recorded non-strata transactions, last 24 months (latest '+new Date(r.latest).toLocaleDateString('en-AU')+'). Source: NSW Spatial Services urban property sales. Includes possible vacant land; not a house-only median. No bedroom information.'}
+
 })();
