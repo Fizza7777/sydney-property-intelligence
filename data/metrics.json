@@ -1,1 +1,592 @@
-[]
+[
+  {
+    "suburb": "Point Piper",
+    "metric": "house",
+    "median": 23500000,
+    "sample_size": 7,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Bellevue Hill",
+    "metric": "house",
+    "median": 12100000,
+    "sample_size": 63,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Vaucluse",
+    "metric": "house",
+    "median": 9800000,
+    "sample_size": 108,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Tamarama",
+    "metric": "house",
+    "median": 8350000,
+    "sample_size": 19,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Double Bay",
+    "metric": "house",
+    "median": 8150000,
+    "sample_size": 19,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Dover Heights",
+    "metric": "house",
+    "median": 7910000,
+    "sample_size": 40,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Rose Bay",
+    "metric": "house",
+    "median": 6900000,
+    "sample_size": 48,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Clovelly",
+    "metric": "house",
+    "median": 6650000,
+    "sample_size": 41,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Mosman",
+    "metric": "house",
+    "median": 5600000,
+    "sample_size": 219,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Bronte",
+    "metric": "house",
+    "median": 5430000,
+    "sample_size": 62,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "North Bondi",
+    "metric": "house",
+    "median": 5370000,
+    "sample_size": 64,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Palm Beach",
+    "metric": "house",
+    "median": 5350000,
+    "sample_size": 36,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Coogee",
+    "metric": "house",
+    "median": 5200000,
+    "sample_size": 58,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Manly",
+    "metric": "house",
+    "median": 5030000,
+    "sample_size": 59,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Woollahra",
+    "metric": "house",
+    "median": 4920000,
+    "sample_size": 89,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Bondi Beach",
+    "metric": "house",
+    "median": 4600000,
+    "sample_size": 41,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Hunters Hill",
+    "metric": "house",
+    "median": 4420000,
+    "sample_size": 93,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Lindfield",
+    "metric": "house",
+    "median": 4280000,
+    "sample_size": 97,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Roseville",
+    "metric": "house",
+    "median": 4160000,
+    "sample_size": 87,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Strathfield",
+    "metric": "house",
+    "median": 4100000,
+    "sample_size": 169,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Killara",
+    "metric": "house",
+    "median": 4090000,
+    "sample_size": 76,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Randwick",
+    "metric": "house",
+    "median": 3760000,
+    "sample_size": 177,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Pymble",
+    "metric": "house",
+    "median": 3730000,
+    "sample_size": 120,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Willoughby",
+    "metric": "house",
+    "median": 3730000,
+    "sample_size": 72,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Paddington",
+    "metric": "house",
+    "median": 3600000,
+    "sample_size": 227,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Chatswood",
+    "metric": "house",
+    "median": 3500000,
+    "sample_size": 128,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Cronulla",
+    "metric": "house",
+    "median": 3500000,
+    "sample_size": 103,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Abbotsford",
+    "metric": "house",
+    "median": 3500000,
+    "sample_size": 33,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Turramurra",
+    "metric": "house",
+    "median": 3400000,
+    "sample_size": 141,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Concord",
+    "metric": "house",
+    "median": 3300000,
+    "sample_size": 176,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Lane Cove",
+    "metric": "house",
+    "median": 3270000,
+    "sample_size": 56,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Drummoyne",
+    "metric": "house",
+    "median": 3100000,
+    "sample_size": 73,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Gladesville",
+    "metric": "house",
+    "median": 3010000,
+    "sample_size": 101,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Burwood",
+    "metric": "house",
+    "median": 2960000,
+    "sample_size": 77,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Maroubra",
+    "metric": "house",
+    "median": 2900000,
+    "sample_size": 227,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Wahroonga",
+    "metric": "house",
+    "median": 2840000,
+    "sample_size": 202,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Five Dock",
+    "metric": "house",
+    "median": 2780000,
+    "sample_size": 69,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Balmain",
+    "metric": "house",
+    "median": 2750000,
+    "sample_size": 144,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Eastwood",
+    "metric": "house",
+    "median": 2660000,
+    "sample_size": 189,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Epping",
+    "metric": "house",
+    "median": 2630000,
+    "sample_size": 187,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Ryde",
+    "metric": "house",
+    "median": 2600000,
+    "sample_size": 231,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "North Ryde",
+    "metric": "house",
+    "median": 2580000,
+    "sample_size": 144,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "West Ryde",
+    "metric": "house",
+    "median": 2400000,
+    "sample_size": 108,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Cherrybrook",
+    "metric": "house",
+    "median": 2400000,
+    "sample_size": 160,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Castle Hill",
+    "metric": "house",
+    "median": 2330000,
+    "sample_size": 506,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Alexandria",
+    "metric": "house",
+    "median": 2240000,
+    "sample_size": 75,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Carlingford",
+    "metric": "house",
+    "median": 2230000,
+    "sample_size": 213,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Leichhardt",
+    "metric": "house",
+    "median": 2200000,
+    "sample_size": 201,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Marrickville",
+    "metric": "house",
+    "median": 2130000,
+    "sample_size": 198,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Earlwood",
+    "metric": "house",
+    "median": 2060000,
+    "sample_size": 172,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Campsie",
+    "metric": "house",
+    "median": 2050000,
+    "sample_size": 64,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Miranda",
+    "metric": "house",
+    "median": 2000000,
+    "sample_size": 164,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "North Parramatta",
+    "metric": "house",
+    "median": 1990000,
+    "sample_size": 50,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Kellyville",
+    "metric": "house",
+    "median": 1970000,
+    "sample_size": 344,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Baulkham Hills",
+    "metric": "house",
+    "median": 1930000,
+    "sample_size": 349,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Kingsgrove",
+    "metric": "house",
+    "median": 1900000,
+    "sample_size": 108,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Newtown",
+    "metric": "house",
+    "median": 1900000,
+    "sample_size": 181,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "Hornsby",
+    "metric": "house",
+    "median": 1830000,
+    "sample_size": 120,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  },
+  {
+    "suburb": "North Kellyville",
+    "metric": "house",
+    "median": 1740000,
+    "sample_size": 260,
+    "year": 2026,
+    "bedrooms": "all",
+    "source": "Carto Australia / NSW Valuer General sales-based suburb medians (15 Oct 2025–15 Oct 2026)",
+    "coverage": "Published 12-month suburb house median; independently calculated by source. See https://property.carto.au/sydney/house-prices/by-suburb/list"
+  }
+]
