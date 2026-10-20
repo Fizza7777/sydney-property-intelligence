@@ -1,0 +1,30 @@
+name: Build NSW suburb land values
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_land_sqm.py'
+      - '.github/workflows/build-land-values.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Query official NSW urban property valuations and calculate suburb means
+        run: python scripts/build_land_sqm.py
+      - name: Commit verified data (only if extraction succeeds)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/land_sqm.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh verified NSW suburb land value per square metre"
+            git push
+          fi
